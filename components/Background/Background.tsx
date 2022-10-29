@@ -1,18 +1,13 @@
-import React, { FC, PropsWithChildren } from 'react';
-import { StaticImageData } from 'next/image';
+import React, { FC, PropsWithChildren } from "react";
 
-import { StyledBackground } from './Background.styled'
+import { BackgroundProps } from "./Background.props";
+import { StyledBackground } from "./Background.styled";
 
-interface GameBackgroundProps {
-  image: StaticImageData;
-}
-
-const Background: FC<PropsWithChildren<GameBackgroundProps>> = ({ image, children }) => {
-  return (
-    <StyledBackground image={image}>
-      { children }
-    </StyledBackground>
-  );
+const Background: FC<PropsWithChildren<BackgroundProps>> = ({
+	image,
+	children,
+}) => {
+	return <StyledBackground image={image}>{children}</StyledBackground>;
 };
 
 export default Background;
