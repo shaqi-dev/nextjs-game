@@ -1,3 +1,3 @@
-import GameSettings from "./GameSettings";
+import GameSettings from './GameSettings';
 
 export default GameSettings;

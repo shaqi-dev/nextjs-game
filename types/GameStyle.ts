@@ -1,6 +1,6 @@
 export enum GameStyle {
-	CANDIES,
-	COINS,
-	CHRISTMAS,
-	FLOWERS,
+  CANDIES,
+  COINS,
+  CHRISTMAS,
+  FLOWERS,
 }
